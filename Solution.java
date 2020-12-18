@@ -1,5 +1,5 @@
 import java.util.*;
-public class BST<Key extends Comparable<Key>, Value>{
+public class Solution<Key extends Comparable<Key>, Value>{
 	private Node root;
 
 	private class Node{
@@ -15,7 +15,7 @@ public class BST<Key extends Comparable<Key>, Value>{
  		}
 	}
 
-	public BST(){
+	public Solution(){
 		root = null;
 	}
 
@@ -201,7 +201,7 @@ public class BST<Key extends Comparable<Key>, Value>{
 
 
 	public static void main(String[] args) {
-		BST<String, Integer> obj = new BST<>();
+		Solution<String, Integer> obj = new Solution<>();
 
 		obj.put("Ada",1);
 		obj.put("Ballerina",3);
